@@ -8,7 +8,7 @@ class RestaurantProvider with ChangeNotifier {
   final dio = Dio(BaseOptions(
       baseUrl: "https://developers.zomato.com/api/v2.1/search",
       headers: {
-        "user-key": "0d182e36ea68c4dc8675bfe9f5d78a4f",
+        "user-key": "[zomato api key]",
       }));
 
   Future<void> searchRestaurant(String query) async {
